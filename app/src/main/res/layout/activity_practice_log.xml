@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F7FA"
+    tools:context=".PracticeLogActivity">
+
+    <TextView
+        android:id="@+id/tvWelcomePracticeLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello! 載入中..."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1A2530" />
+
+    <TextView
+        android:id="@+id/tvLogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📈 歷次練習總覽"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#34495E"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <ListView
+        android:id="@+id/lvLogList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#E2E8F0"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnLogBack"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="⬅️ 返回紀錄選單"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#95A5A6"
+        android:insetTop="0dp"
+        android:insetBottom="0dp" />
+
+</LinearLayout>

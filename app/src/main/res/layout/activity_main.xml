@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F7FA"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello! 載入中..."
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#1A2530"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="今天想要挑戰哪一個功能呢？"
+        android:textSize="14sp"
+        android:textColor="#7A8B9B"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnStartPractice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginVertical="8dp"
+        android:text="🚀  開始數學練習"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2ECC71"
+        android:insetTop="0dp"
+        android:insetBottom="0dp" />
+
+    <Button
+        android:id="@+id/btnPracticeLogs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginVertical="8dp"
+        android:text="📊  檢視練習記錄"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3498DB"
+        android:insetTop="0dp"
+        android:insetBottom="0dp" />
+
+    <Button
+        android:id="@+id/btnChangeUsername"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginVertical="8dp"
+        android:text="👤  修改我的名字"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E67E22"
+        android:insetTop="0dp"
+        android:insetBottom="0dp" />
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginVertical="8dp"
+        android:text="🚪  離開練習系統"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#95A5A6"
+        android:insetTop="0dp"
+        android:insetBottom="0dp" />
+
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ITP4501 Mobile Assignment"
+        android:textSize="12sp"
+        android:textColor="#BDC3C7"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>

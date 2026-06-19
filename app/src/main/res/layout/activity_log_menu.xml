@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F7FA"
+    tools:context=".LogMenuActivity">
+
+    <TextView
+        android:id="@+id/tvWelcomeLogMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello! 載入中..."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1A2530" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 紀錄中心"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#34495E"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnGoPracticeLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginVertical="12dp"
+        android:text="📈 歷次練習總覽\n(Practice Log)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2ECC71"
+        android:insetTop="0dp"
+        android:insetBottom="0dp" />
+
+    <Button
+        android:id="@+id/btnGoWrongLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginVertical="12dp"
+        android:text="❌ 我的錯題小筆記\n(Wrong Answer Log)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E74C3C"
+        android:insetTop="0dp"
+        android:insetBottom="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnLogMenuBack"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="⬅️ 返回上一頁"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#95A5A6"
+        android:insetTop="0dp"
+        android:insetBottom="0dp" />
+
+</LinearLayout>

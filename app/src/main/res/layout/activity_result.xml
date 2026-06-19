@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F7FA"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/tvWelcomeResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello! 載入中..."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1A2530" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎉 測試完成！"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#2ECC71"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvResultSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="總共花費：0 秒\n答錯題數：0 題"
+            android:textSize="18sp"
+            android:textColor="#34495E"
+            android:lineSpacingMultiplier="1.2"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 答題詳細報告："
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#7A8B9B"
+        android:layout_marginBottom="8dp" />
+
+    <ListView
+        android:id="@+id/lvResultDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#E2E8F0"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnResultBackToMain"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="🏠 返回主選單"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3498DB"
+        android:insetTop="0dp"
+        android:insetBottom="0dp" />
+
+</LinearLayout>
