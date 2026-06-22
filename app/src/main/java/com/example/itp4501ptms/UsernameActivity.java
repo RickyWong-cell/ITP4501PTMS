@@ -31,18 +31,16 @@ public class UsernameActivity extends AppCompatActivity {
         String currentName = sharedPreferences.getString("username", "");
 
         tvWelcomeUsername.setText("Hello! " + currentName);
-        etNewUsername.setText(currentName); // 預設顯示目前的名字
+        etNewUsername.setText(currentName);
 
-        // 儲存按鈕邏輯
         btnSaveUsername.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String newName = etNewUsername.getText().toString().trim();
                 if (!newName.isEmpty()) {
-                    // 更新本地儲存
                     sharedPreferences.edit().putString("username", newName).apply();
                     Toast.makeText(UsernameActivity.this, "名字修改成功！✨", Toast.LENGTH_SHORT).show();
-                    finish(); // 修改成功後返回主選單（主選單的 onResume 會自動更新文字）
+                    finish();
                 } else {
                     Toast.makeText(UsernameActivity.this, "名字不能是空的喔！", Toast.LENGTH_SHORT).show();
                 }

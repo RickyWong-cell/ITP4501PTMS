@@ -59,6 +59,17 @@
         android:layout_marginBottom="24dp">
 
         <TextView
+            android:id="@+id/tvQuestionTypeHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:text="【當前題型：載入中】"
+            android:textColor="#FF9800"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/tvQuizQuestion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
